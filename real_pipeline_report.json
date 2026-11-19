@@ -5,7 +5,7 @@
       "file": "example_real_click_doc.md",
       "line_range": [
         20,
-        20
+        26
       ],
       "mentioned_symbols": [
         "Parameter.human_readable_name",
