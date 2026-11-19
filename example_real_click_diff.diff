@@ -47,7 +47,7 @@ index 1f9323a..59ed94e 100644
 +        What Click uses internally to identify the parameter and to pass its
 +        value to the command callback. See :attr:`name`.
 +
-     :param param_decls: the parameter declarations for this option or
+     :param param_decls: parameter declarations for this option or
                          argument.  This is a list of flags or argument
                          names.
 @@ -2334,8 +2349,29 @@ class Parameter(ABC):
