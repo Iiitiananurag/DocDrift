@@ -1,0 +1,765 @@
+[
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "77838f86fa647ca82f53a88d6495dfc009b24c41",
+    "doc_commit_sha": "5f802ac459557685bd6748c6cc75cb4a4a82617e",
+    "code_files_changed": [
+      "src/click/core.py",
+      "src/click/decorators.py"
+    ],
+    "doc_files_changed": [
+      "docs/advanced.rst"
+    ],
+    "doc_commit_message": "fix docs: typo and word choice (#2325)",
+    "date_gap": "43.9 minutes",
+    "date_gap_days": 0.0305,
+    "commit_distance": 2,
+    "shared_identifiers": [
+      "argument",
+      "arguments"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/advanced.rst": [
+        [
+          285,
+          285
+        ],
+        [
+          342,
+          342
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/advanced.rst": [
+        [
+          285,
+          285
+        ],
+        [
+          342,
+          342
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "bcd3faaaaf03933915394f6c24d4f06d22aa8a1d",
+    "doc_commit_sha": "4fd13ef26034b0cdd018a85a9278ae26e122e612",
+    "code_files_changed": [
+      "src/click/shell_completion.py"
+    ],
+    "doc_files_changed": [
+      "docs/documentation.rst"
+    ],
+    "doc_commit_message": "add documentation example for epilog",
+    "date_gap": "3.48 hours",
+    "date_gap_days": 0.145,
+    "commit_distance": 7,
+    "shared_identifiers": [
+      "end",
+      "prog_name",
+      "string"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/documentation.rst": [
+        [
+          211,
+          211
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/documentation.rst": [
+        [
+          212,
+          229
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "33d9ddac15bba2c65e963f44698ae7b65605f66e",
+    "doc_commit_sha": "920d0d73844ac6b15d67f4d7555f7e8b2154c836",
+    "code_files_changed": [
+      ".github/workflows/tests.yaml",
+      "tox.ini"
+    ],
+    "doc_files_changed": [
+      "CHANGES.rst",
+      "CONTRIBUTING.rst",
+      "docs/setuptools.rst",
+      "docs/shell-completion.rst"
+    ],
+    "doc_commit_message": "Doc Update Resolving Issue #2206",
+    "date_gap": "9.18 days",
+    "date_gap_days": 9.183,
+    "commit_distance": 2,
+    "shared_identifiers": [
+      "python"
+    ],
+    "doc_changed_line_ranges": {
+      "CHANGES.rst": [
+        [
+          2,
+          2
+        ]
+      ],
+      "CONTRIBUTING.rst": [
+        [
+          147,
+          147
+        ]
+      ],
+      "docs/setuptools.rst": [
+        [
+          84,
+          87
+        ]
+      ],
+      "docs/shell-completion.rst": [
+        [
+          31,
+          36
+        ],
+        [
+          197,
+          197
+        ],
+        [
+          210,
+          210
+        ],
+        [
+          221,
+          221
+        ],
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "CHANGES.rst": [
+        [
+          3,
+          9
+        ]
+      ],
+      "CONTRIBUTING.rst": [
+        [
+          147,
+          147
+        ]
+      ],
+      "docs/setuptools.rst": [
+        [
+          84,
+          89
+        ]
+      ],
+      "docs/shell-completion.rst": [
+        [
+          31,
+          40
+        ],
+        [
+          201,
+          201
+        ],
+        [
+          214,
+          214
+        ],
+        [
+          225,
+          225
+        ],
+        [
+          228,
+          228
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "8c842a43e884c5e69032223563649f4389e37dd8",
+    "doc_commit_sha": "27abb990b1582c6f95b91fa965d74c6d2db9c9f6",
+    "code_files_changed": [
+      "src/click/exceptions.py",
+      "tests/test_testing.py"
+    ],
+    "doc_files_changed": [
+      "docs/commands.rst",
+      "docs/quickstart.rst"
+    ],
+    "doc_commit_message": "Fix broken documentation reference.",
+    "date_gap": "7.67 days",
+    "date_gap_days": 7.6746,
+    "commit_distance": 8,
+    "shared_identifiers": [
+      "click",
+      "command"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/commands.rst": [
+        [
+          277,
+          277
+        ],
+        [
+          280,
+          280
+        ]
+      ],
+      "docs/quickstart.rst": [
+        [
+          24,
+          24
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/commands.rst": [
+        [
+          278,
+          278
+        ],
+        [
+          281,
+          281
+        ]
+      ],
+      "docs/quickstart.rst": [
+        [
+          24,
+          24
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "45f89cd5d39db37b9aa1a014da000f12da532ddc",
+    "doc_commit_sha": "9d7c7dce1113dc76326166c03bcdf7f2815d059d",
+    "code_files_changed": [
+      "src/click/_compat.py",
+      "src/click/_termui_impl.py",
+      "src/click/_winconsole.py",
+      "tox.ini"
+    ],
+    "doc_files_changed": [
+      "docs/index.rst"
+    ],
+    "doc_commit_message": "Fix documentation build errors.",
+    "date_gap": "5.83 hours",
+    "date_gap_days": 0.2431,
+    "commit_distance": 5,
+    "shared_identifiers": [
+      "errors"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/index.rst": [
+        [
+          80,
+          81
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/index.rst": [
+        [
+          79,
+          79
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "45f89cd5d39db37b9aa1a014da000f12da532ddc",
+    "doc_commit_sha": "2a6b6bf9b45b8ee75f8bd2844a4e9eed40d21914",
+    "code_files_changed": [
+      "src/click/_compat.py",
+      "src/click/_termui_impl.py",
+      "src/click/_winconsole.py",
+      "tox.ini"
+    ],
+    "doc_files_changed": [
+      "docs/documentation.rst"
+    ],
+    "doc_commit_message": "Fix typos on help pages docs.",
+    "date_gap": "1.44 days",
+    "date_gap_days": 1.4395,
+    "commit_distance": 6,
+    "shared_identifiers": [
+      "click"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/documentation.rst": [
+        [
+          9,
+          9
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          52,
+          52
+        ],
+        [
+          69,
+          69
+        ],
+        [
+          91,
+          91
+        ],
+        [
+          110,
+          111
+        ],
+        [
+          135,
+          136
+        ],
+        [
+          162,
+          162
+        ],
+        [
+          193,
+          194
+        ],
+        [
+          238,
+          238
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/documentation.rst": [
+        [
+          9,
+          9
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          27,
+          27
+        ],
+        [
+          49,
+          49
+        ],
+        [
+          65,
+          65
+        ],
+        [
+          86,
+          86
+        ],
+        [
+          104,
+          104
+        ],
+        [
+          127,
+          127
+        ],
+        [
+          152,
+          152
+        ],
+        [
+          182,
+          182
+        ],
+        [
+          225,
+          225
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "6fec395ea5c63db0a38c768c8c2d7d0c40ae1de4",
+    "doc_commit_sha": "fb240d2daed01552df98150f2e6a6b052a980671",
+    "code_files_changed": [
+      "src/click/_winconsole.py"
+    ],
+    "doc_files_changed": [
+      "docs/parameter-types.rst"
+    ],
+    "doc_commit_message": "Update docs for enum choice",
+    "date_gap": "8.18 days",
+    "date_gap_days": 8.1793,
+    "commit_distance": 9,
+    "shared_identifiers": [
+      "any"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/parameter-types.rst": [
+        [
+          36,
+          37
+        ],
+        [
+          57,
+          59
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/parameter-types.rst": [
+        [
+          36,
+          37
+        ],
+        [
+          57,
+          58
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "1c20dc6e724cd5625faaa17b715ba928d44c08bf",
+    "doc_commit_sha": "8450d66f6e70dd2454b466af6f8008c5145eeb2e",
+    "code_files_changed": [
+      "src/click/core.py",
+      "tests/test_defaults.py"
+    ],
+    "doc_files_changed": [
+      "docs/options.md"
+    ],
+    "doc_commit_message": "Correct errors in docs for multiple options.",
+    "date_gap": "2.73 hours",
+    "date_gap_days": 0.1136,
+    "commit_distance": 3,
+    "shared_identifiers": [
+      "but",
+      "click",
+      "command",
+      "echo",
+      "function",
+      "multiple",
+      "option"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/options.md": [
+        [
+          134,
+          134
+        ],
+        [
+          198,
+          198
+        ],
+        [
+          206,
+          206
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/options.md": [
+        [
+          134,
+          134
+        ],
+        [
+          198,
+          198
+        ],
+        [
+          206,
+          208
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "1c20dc6e724cd5625faaa17b715ba928d44c08bf",
+    "doc_commit_sha": "ec56fbfa344c3022a110b9c7af9f01a04a6f80c5",
+    "code_files_changed": [
+      "src/click/core.py",
+      "tests/test_defaults.py"
+    ],
+    "doc_files_changed": [
+      "docs/api.md"
+    ],
+    "doc_commit_message": "Add {doc}",
+    "date_gap": "3.17 days",
+    "date_gap_days": 3.1693,
+    "commit_distance": 13,
+    "shared_identifiers": [
+      "about"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/api.md": [
+        [
+          315,
+          315
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/api.md": [
+        [
+          315,
+          315
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "ce7b47dfc9ea0c665044024d91bd45c547617bf4",
+    "doc_commit_sha": "9c2f183f0fbd32e2502836b9cc14e9c95f570563",
+    "code_files_changed": [
+      "src/click/core.py"
+    ],
+    "doc_files_changed": [
+      "docs/options.md"
+    ],
+    "doc_commit_message": "Add clarifying docs for on/off flag pattern.",
+    "date_gap": "11.64 days",
+    "date_gap_days": 11.637,
+    "commit_distance": 15,
+    "shared_identifiers": [
+      "more",
+      "user"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/options.md": [
+        [
+          260,
+          261
+        ],
+        [
+          282,
+          282
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/options.md": [
+        [
+          260,
+          260
+        ],
+        [
+          282,
+          287
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "97b300c41b6b241570f598f387e2e018844be0f4",
+    "doc_commit_sha": "b0cab0e3e1f87e5d641761bf38cbc568ce88d3cc",
+    "code_files_changed": [
+      ".github/workflows/lock.yaml",
+      ".github/workflows/pre-commit.yaml",
+      ".github/workflows/publish.yaml",
+      ".github/workflows/test-flask.yaml",
+      ".github/workflows/tests.yaml",
+      ".github/workflows/zizmor.yaml"
+    ],
+    "doc_files_changed": [
+      "docs/index.rst",
+      "docs/standalone-apps.md"
+    ],
+    "doc_commit_message": "docs: add standalone application guide with Briefcase",
+    "date_gap": "2.02 days",
+    "date_gap_days": 2.0221,
+    "commit_distance": 3,
+    "shared_identifiers": [
+      "Windows",
+      "click",
+      "com",
+      "create",
+      "dev",
+      "directory",
+      "include",
+      "main",
+      "python",
+      "run",
+      "source",
+      "stable",
+      "true",
+      "version"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/index.rst": [
+        [
+          81,
+          81
+        ]
+      ],
+      "docs/standalone-apps.md": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/index.rst": [
+        [
+          82,
+          82
+        ]
+      ],
+      "docs/standalone-apps.md": [
+        [
+          1,
+          148
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "d15f3c23a177e80c324e1ee9681c9449c31ac965",
+    "doc_commit_sha": "dfb15ee66a119e85def0bd69e39e64f69a883f2f",
+    "code_files_changed": [
+      "src/click/_compat.py",
+      "tests/test_utils.py"
+    ],
+    "doc_files_changed": [
+      "docs/documentation.md"
+    ],
+    "doc_commit_message": "Add example for Group Help Page in documentation",
+    "date_gap": "2.71 hours",
+    "date_gap_days": 0.113,
+    "commit_distance": 2,
+    "shared_identifiers": [
+      "click"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/documentation.md": [
+        [
+          52,
+          52
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/documentation.md": [
+        [
+          53,
+          92
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "77bd81f3f0c9d7fc8e1ca83f641c41489c508991",
+    "doc_commit_sha": "16bf6ccc6b401b2299b8db25d3698e8f18ac272a",
+    "code_files_changed": [
+      "src/click/types.py"
+    ],
+    "doc_files_changed": [
+      "docs/options.md"
+    ],
+    "doc_commit_message": "docs: fix flag-pair separator and small typos in options guide",
+    "date_gap": "1.95 days",
+    "date_gap_days": 1.9534,
+    "commit_distance": 9,
+    "shared_identifiers": [
+      "defined",
+      "option",
+      "variable"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/options.md": [
+        [
+          355,
+          355
+        ],
+        [
+          712,
+          712
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/options.md": [
+        [
+          355,
+          355
+        ],
+        [
+          712,
+          712
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "7eb57cff7cd292fbd526eaf861c8f945ddeb07a3",
+    "doc_commit_sha": "63ab153198cde6a39192fc5fed9d810f58344a79",
+    "code_files_changed": [
+      "pyproject.toml",
+      "src/click/_compat.py",
+      "tests/test_stream_lifecycle.py",
+      "tests/test_utils.py"
+    ],
+    "doc_files_changed": [
+      "docs/parameters.md"
+    ],
+    "doc_commit_message": "docs: fix typo 'with in' to 'within' in parameters page",
+    "date_gap": "1.35 days",
+    "date_gap_days": 1.3505,
+    "commit_distance": 6,
+    "shared_identifiers": [
+      "reason"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/parameters.md": [
+        [
+          22,
+          22
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/parameters.md": [
+        [
+          22,
+          22
+        ]
+      ]
+    }
+  }
+]

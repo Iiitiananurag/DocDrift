@@ -1,0 +1,2 @@
+gitpython
+sentence-transformers  # optional - matcher.py falls back to n-gram cosine similarity if missing

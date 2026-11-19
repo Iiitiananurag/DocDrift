@@ -1,0 +1,45 @@
+[
+  {
+    "text": "Call `connect_db(dsn)` to open a pooled session; if the server does not respond within the default 5 seconds timeout, a ConnectionTimeoutError is raised.",
+    "file": "docs/database.md",
+    "line_range": [
+      14,
+      16
+    ],
+    "mentioned_symbols": [
+      "connect_db",
+      "ConnectionTimeoutError"
+    ]
+  },
+  {
+    "text": "Transient 503 responses are automatically retried up to 3 times as controlled by `max_retry_attempt` before surfacing an error to the caller.",
+    "file": "docs/configuration.md",
+    "line_range": [
+      28,
+      30
+    ],
+    "mentioned_symbols": [
+      "max_retry_attempt"
+    ]
+  },
+  {
+    "text": "For older v1 integrations, authenticate requests by passing your static key in the `X-Legacy-Token` header via the legacy token authentication provider.",
+    "file": "docs/security.md",
+    "line_range": [
+      52,
+      55
+    ],
+    "mentioned_symbols": []
+  },
+  {
+    "text": "Use `flush_batch(items)` to flush pending records to storage and return the count of written items.",
+    "file": "docs/ingestion.md",
+    "line_range": [
+      10,
+      12
+    ],
+    "mentioned_symbols": [
+      "flush_batch"
+    ]
+  }
+]

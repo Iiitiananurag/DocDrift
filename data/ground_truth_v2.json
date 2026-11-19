@@ -1,0 +1,87 @@
+[
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "bcd3faaaaf03933915394f6c24d4f06d22aa8a1d",
+    "doc_commit_sha": "4fd13ef26034b0cdd018a85a9278ae26e122e612",
+    "code_files_changed": [
+      "src/click/shell_completion.py"
+    ],
+    "doc_files_changed": [
+      "docs/documentation.rst"
+    ],
+    "doc_commit_message": "add documentation example for epilog",
+    "date_gap": "3.48 hours",
+    "date_gap_days": 0.145,
+    "commit_distance": 7,
+    "shared_identifiers": [
+      "prog_name"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/documentation.rst": [
+        [
+          211,
+          211
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/documentation.rst": [
+        [
+          212,
+          229
+        ]
+      ]
+    }
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "code_commit_sha": "1c20dc6e724cd5625faaa17b715ba928d44c08bf",
+    "doc_commit_sha": "8450d66f6e70dd2454b466af6f8008c5145eeb2e",
+    "code_files_changed": [
+      "src/click/core.py",
+      "tests/test_defaults.py"
+    ],
+    "doc_files_changed": [
+      "docs/options.md"
+    ],
+    "doc_commit_message": "Correct errors in docs for multiple options.",
+    "date_gap": "2.73 hours",
+    "date_gap_days": 0.1136,
+    "commit_distance": 3,
+    "shared_identifiers": [
+      "click.echo"
+    ],
+    "doc_changed_line_ranges": {
+      "docs/options.md": [
+        [
+          134,
+          134
+        ],
+        [
+          198,
+          198
+        ],
+        [
+          206,
+          206
+        ]
+      ]
+    },
+    "doc_post_line_ranges": {
+      "docs/options.md": [
+        [
+          134,
+          134
+        ],
+        [
+          198,
+          198
+        ],
+        [
+          206,
+          208
+        ]
+      ]
+    }
+  }
+]
