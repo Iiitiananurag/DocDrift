@@ -1,0 +1,100 @@
+name: DocDrift Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  docdrift:
+    name: Detect Documentation Drift
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install sentence-transformers
+
+      - name: Extract PR code diff and run DocDrift
+        id: run_docdrift
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          git diff origin/${{ github.base_ref }}...HEAD > pr_changes.diff
+          if [ -z "$GROQ_API_KEY" ]; then
+            python matching/cli.py check \
+              --diff pr_changes.diff \
+              --docs docs/ \
+              --mock \
+              --json-out docdrift_report.json
+          else
+            python matching/cli.py check \
+              --diff pr_changes.diff \
+              --docs docs/ \
+              --json-out docdrift_report.json
+          fi
+
+      - name: Post or update PR comment with flagged documentation
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('docdrift_report.json')) {
+              console.log('No docdrift_report.json produced; skipping PR comment.');
+              return;
+            }
+            const report = JSON.parse(fs.readFileSync('docdrift_report.json', 'utf8'));
+            const flagged = report.flagged_units || [];
+            const marker = '<!-- docdrift-ci-comment -->';
+
+            let body = `${marker}\n### DocDrift CI Report\n\n`;
+            if (flagged.length === 0) {
+              body += `No documentation drift detected across ${report.summary.total_matched_pairs} matched doc-symbol pairs.\n`;
+            } else {
+              body += `${flagged.length} documentation unit(s) may be outdated following this PR's code changes:\n\n`;
+              body += `| Status | Doc Location | Code Change | Confidence | Reason |\n`;
+              body += `| :--- | :--- | :--- | :---: | :--- |\n`;
+              for (const u of flagged) {
+                const icon = u.verdict === 'likely outdated' ? 'likely outdated' : 'uncertain';
+                body += `| ${icon} | \`${u.file_line}\` | \`${u.symbol_name}\` (\`${u.code_file_line}\`) | **${(u.confidence * 100).toFixed(0)}%** | ${u.reason} |\n`;
+              }
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body && c.body.includes(marker));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
